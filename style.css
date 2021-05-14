@@ -48,6 +48,7 @@ button {
     color: #fff;
     font-weight: 600;
     cursor: pointer;
+    font-family: 'Bai Jamjuree', sans-serif !important;
 }
 body > header > div:nth-child(3) > button:nth-child(1) {
     box-shadow: 0px 3px 0px hsl(168deg 52% 39%);
@@ -62,7 +63,7 @@ body > header > div:nth-child(3) > button:nth-child(2) {
     margin: auto;
     padding: 30px;
     text-align: center;
-    width: 600px;
+    width: 1200px;
 }
 .snippet {
     margin-top: 10px;
@@ -84,25 +85,65 @@ body > header > div:nth-child(3) > button:nth-child(2) {
     font-weight: 700;
     margin-bottom: 40px;
 }
+.info {
+    display:flex
+}
+.info img {
+    width: 100%;
+    position: relative;
+    left: -280px;
+}
+.compdesc {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 450px;
+    margin-right: -80px; 
+}
 .desc {
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .desc h3 {
     font-family: 'Bai Jamjuree', sans-serif !important;
     font-size: 25px;
-    font-weight: bolder;
+    font-weight: 900;
     line-height: 1.3em;
-    margin-bottom: 30px;
+    text-align: left;
 }
 .desc p {
     color: hsl(201, 11%, 66%);
+    text-align: left;
+    font-family: 'Bai Jamjuree', sans-serif !important;
+    line-height: 1.5em;
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto 0;
+    padding: 10px 0;
+    width: 350px;
+}
+body > div.comp > div.info > div > div:nth-child(1) {
+    margin-top: 200px;
+}
+.access {
     text-align: center;
+    padding-top: 50px;
+}
+.access h3 {
+    font-family: 'Bai Jamjuree', sans-serif !important;
+    font-size: 38px;
+    font-weight: bolder;
+    line-height: 1.3em;
+}
+.access p {
+    color: hsl(201, 11%, 66%);
+    text-align: center;
+    box-sizing: border-box;
     font-family: 'Bai Jamjuree', sans-serif !important;
     line-height: 1.5em;
     padding: 10px 0;
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 40px;
 }
 .screen {
     display: grid;
@@ -229,7 +270,7 @@ body > div.grid > div > div:nth-child(3) > h3 {
 }
 body > div.grid > div > div:nth-child(3) > p {
     text-align: center;
-    font-family: 'Bai Jamjuree', sans-serif !important
+    font-family: 'Bai Jamjuree', sans-serif !important;
     line-height: 1.3em;
     color: hsl(201, 11%, 66%);
     font-size: 20px;
@@ -288,76 +329,44 @@ footer {
     line-height: 1.5em;
     display: flex;
     flex-direction: column;
+    background-color: hsl(201, 12%, 95%);
 }
 .footer {
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: hsl(201, 12%, 95%);
+    justify-content: space-around;
+    padding-top: 50px;
 }
 .footerimg {
-    font-size: 18px;
-    box-sizing: border-box;
     margin-left: 100px;
-    line-height: 1.5;
     width: 15%;
     align-self: flex-start;
     margin-top: 50px;
 }
 .log {
     width: 50px;
-}
-footer li {
-    list-style: none;
-    margin-top: 50px;
-    justify-content: space-evenly;
-}
-ul a {
-    text-decoration: none;
+}.footer p {
+    padding-bottom: 25px;
+    font-weight: 600;   
+    font-size: 20px;
     color: hsl(201, 11%, 66%);
-}
-body > footer > div > div.footerlist > ul:nth-child(1) {
-    font-family: 'Bai Jamjuree', sans-serif;
-    display: flex;
-    flex-direction: column;
-    color: hsl(201, 11%, 66%);
-    font-weight: 600;
-    width: 25%;
-}
-body > footer > div > div.footerlist > ul:nth-child(2) {
-    font-family: 'Bai Jamjuree', sans-serif !important;
-    display: flex;
-    flex-direction: row;
-    color: hsl(201, 11%, 66%);
-    font-weight: 600;
-    width: 25%;
-}
-body > footer > div > div.footerlist > ul:nth-child(3) {
-    font-family: 'Bai Jamjuree', sans-serif !important;
-    display: flex;
-    flex-direction: row;
-    color: hsl(201, 11%, 66%);
-    font-weight: 600;
-    width: 25%;
-}
-.socials {
-    margin-top: 50px;
-    justify-content: space-between;
+} 
+.four {
     display: flex;
     flex-direction: row;
     align-self: flex-start;
-    padding: 0;
+    justify-content: space-between;
     width: 150px;
-}
+}  
 .rights {
     color: hsl(201, 11%, 66%);
     margin-top: 50px;
     line-height: 1.5;
     margin: auto;
     padding: 10px 0;
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
-    width: auto;
 }
 .rights a {
     color:hsl(200, 5%, 55%);
